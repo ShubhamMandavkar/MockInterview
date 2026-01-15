@@ -1,290 +1,290 @@
 .interviewer-sessions-container {
-  min-height: 100vh;
-  background: #ffffff;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.page-header {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e0e7ff;
-}
-
-.back-btn {
-  padding: 0.5rem 1rem;
-  background: transparent;
-  color: #2563eb;
-  border: 1.5px solid #2563eb;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 1rem;
-}
-
-.back-btn:hover {
-  background: #eff6ff;
-}
-
-.page-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0 0 0.5rem 0;
-}
-
-.page-subtitle {
-  font-size: 1rem;
-  color: #64748b;
-  margin: 0;
-}
-
-.sessions-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
-}
-
-.session-card {
-  background: #ffffff;
-  border: 1px solid #e0e7ff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.session-card:hover {
-  border-color: #2563eb;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
-  transform: translateY(-2px);
-}
-
-.session-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-  gap: 1rem;
-}
-
-.session-info {
-  flex: 1;
-}
-
-.interviewee-name {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin: 0 0 0.5rem 0;
-}
-
-.session-time {
-  font-size: 0.95rem;
-  color: #64748b;
-  margin: 0 0 0.75rem 0;
-  font-weight: 500;
-}
-
-.role-label {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background: #eff6ff;
-  color: #2563eb;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-}
-.session-status {
-  flex-shrink: 0;
-}
-
-.status-badge {
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-}
-
-.status-scheduled {
-  background: #eff6ff;
-  color: #2563eb;
-}
-
-.status-live {
-  background: #fee2e2;
-  color: #dc2626;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  50% {
-    opacity: 0.7;
+  
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e7ff;
   }
-}
-
-.session-card-actions {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.action-btn {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.view-btn {
-  background: #eff6ff;
-  color: #2563eb;
-  border: 1.5px solid #2563eb;
-}
-
-.view-btn:hover {
-  background: #dbeafe;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
-}
-
-.join-btn.live {
-  background: #2563eb;
-  color: #ffffff;
-}
-
-.join-btn.live:hover {
-  background: #1d4ed8;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
-}
-
-/* Loading, Error, and Empty States */
-.loading-state,
-.error-state,
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
-  text-align: center;
-  background: #ffffff;
-  border: 1px solid #e0e7ff;
-  border-radius: 12px;
-  margin-top: 2rem;
-}
-
-.loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #e0e7ff;
-  border-top: 3px solid #2563eb;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 1rem;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.error-icon,
-.empty-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.error-state h3,
-.empty-state h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin: 0 0 0.5rem 0;
-}
-
-.error-state p,
-.empty-state p {
-  color: #64748b;
-  margin: 0 0 1.5rem 0;
-  max-width: 400px;
-}
-
-.retry-btn,
-.browse-btn {
-  padding: 0.75rem 1.5rem;
-  background: #2563eb;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.retry-btn:hover,
-.browse-btn:hover {
-  background: #1d4ed8;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .interviewer-sessions-container {
-    padding: 1rem;
+  
+  .back-btn {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: #2563eb;
+    border: 1.5px solid #2563eb;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
   }
-
-  .sessions-list {
-    grid-template-columns: 1fr;
+  
+  .back-btn:hover {
+    background: #eff6ff;
   }
-
-  .session-card-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .session-status {
-    align-self: flex-start;
-    margin-top: 0.5rem;
-  }
-
-  .session-card-actions {
-    justify-content: stretch;
-  }
-
-  .action-btn {
-    width: 100%;
-  }
-
+  
   .page-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
   }
-}
-
-@media (max-width: 480px) {
+  
+  .page-subtitle {
+    font-size: 1rem;
+    color: #64748b;
+    margin: 0;
+  }
+  
   .sessions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .session-card {
+    background: #ffffff;
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .session-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .session-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
     gap: 1rem;
   }
-
-  .session-card {
-    padding: 1rem;
+  
+  .session-info {
+    flex: 1;
   }
-
+  
   .interviewee-name {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
   }
-}
+  
+  .session-time {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin: 0 0 0.75rem 0;
+    font-weight: 500;
+  }
+  
+  .role-label {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+  .session-status {
+    flex-shrink: 0;
+  }
+  
+  .status-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+  
+  .status-scheduled {
+    background: #eff6ff;
+    color: #2563eb;
+  }
+  
+  .status-live {
+    background: #fee2e2;
+    color: #dc2626;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  
+  .session-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .action-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .view-btn {
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1.5px solid #2563eb;
+  }
+  
+  .view-btn:hover {
+    background: #dbeafe;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+  }
+  
+  .join-btn.live {
+    background: #2563eb;
+    color: #ffffff;
+  }
+  
+  .join-btn.live:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+  }
+  
+  /* Loading, Error, and Empty States */
+  .loading-state,
+  .error-state,
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e0e7ff;
+    border-top: 3px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .error-icon,
+  .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-state h3,
+  .empty-state h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .error-state p,
+  .empty-state p {
+    color: #64748b;
+    margin: 0 0 1.5rem 0;
+    max-width: 400px;
+  }
+  
+  .retry-btn,
+  .browse-btn {
+    padding: 0.75rem 1.5rem;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .retry-btn:hover,
+  .browse-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .interviewer-sessions-container {
+      padding: 1rem;
+    }
+  
+    .sessions-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .session-card-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .session-status {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
+  
+    .session-card-actions {
+      justify-content: stretch;
+    }
+  
+    .action-btn {
+      width: 100%;
+    }
+  
+    .page-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sessions-list {
+      gap: 1rem;
+    }
+  
+    .session-card {
+      padding: 1rem;
+    }
+  
+    .interviewee-name {
+      font-size: 1.1rem;
+    }
+  }

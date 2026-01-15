@@ -1,75 +1,76 @@
 .feedback-reminder-banner {
-  background: #eff6ff;
-  border: 1px solid #bfdbfe;
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.reminder-content h3 {
-  margin: 0 0 0.25rem 0;
-  color: #1e293b;
-  font-size: 1.1rem;
-}
-
-.reminder-content p {
-  margin: 0;
-  color: #475569;
-  font-size: 0.95rem;
-}
-
-.reminder-actions {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.reminder-btn {
-  padding: 0.6rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-}
-
-.reminder-btn.primary {
-  background: #2563eb;
-  color: #ffffff;
-  border-color: #2563eb;
-}
-
-.reminder-btn.primary:hover {
-  background: #1d4ed8;
-}
-
-.reminder-btn.ghost {
-  background: transparent;
-  color: #2563eb;
-  border-color: #bfdbfe;
-}
-
-.reminder-btn.ghost:hover {
-  background: #e0ecff;
-}
-
-@media (max-width: 640px) {
-  .feedback-reminder-banner {
-    flex-direction: column;
-    align-items: flex-start;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
+  
+  .reminder-content h3 {
+    margin: 0 0 0.25rem 0;
+    color: #1e293b;
+    font-size: 1.1rem;
+  }
+  
+  .reminder-content p {
+    margin: 0;
+    color: #475569;
+    font-size: 0.95rem;
+  }
+  
   .reminder-actions {
-    width: 100%;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
   }
+  
   .reminder-btn {
-    width: 100%;
-    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
   }
-}
-
-
+  
+  .reminder-btn.primary {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+  }
+  
+  .reminder-btn.primary:hover {
+    background: #1d4ed8;
+  }
+  
+  .reminder-btn.ghost {
+    background: transparent;
+    color: #2563eb;
+    border-color: #bfdbfe;
+  }
+  
+  .reminder-btn.ghost:hover {
+    background: #e0ecff;
+  }
+  
+  @media (max-width: 640px) {
+    .feedback-reminder-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .reminder-actions {
+      width: 100%;
+    }
+    .reminder-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  
+  
